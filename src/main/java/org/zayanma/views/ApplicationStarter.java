@@ -28,6 +28,7 @@ public class ApplicationStarter extends Application {
         Scene dialogBox = new Scene (FXMLLoader.load(Objects.requireNonNull(getClass().getResource
                 ("/fxml/profileDialog.fxml"))));
         dialogStage.setScene(dialogBox);
+        dialogStage.setResizable(false);
         dialogStage.setOnCloseRequest(event -> {
             Platform.exit();
         });

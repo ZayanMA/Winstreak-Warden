@@ -11,7 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class APIManager {
 
-    String API_Key = "RGAPI-e93f738b-47ce-4be5-bfad-3aa74f58e00c";
+    String API_Key = "RGAPI-009194e9-420a-4cda-9ea4-727ce7d19415";
 
     public APIManager(){
     }

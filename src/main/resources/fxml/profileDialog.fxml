@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="211.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.zayanma.controller.ProfileController">
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="211.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.zayanma.controller.ProfileController">
    <children>
       <Text layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Profile" textAlignment="CENTER" wrappingWidth="350.0">
          <font>
@@ -16,9 +16,10 @@
          </font>
       </Text>
       <ChoiceBox fx:id="profilesChoiceBox" layoutX="97.0" layoutY="51.0" prefWidth="150.0" />
-      <TextField fx:id="profileNameField" layoutX="101.0" layoutY="130.0" />
-      <Button fx:id="createButton" layoutX="132.0" layoutY="171.0" mnemonicParsing="false" text="Create Profile" />
-      <Button fx:id="loadButton" layoutX="136.0" layoutY="83.0" mnemonicParsing="false" text="Load Profile" />
-      <Text fx:id="errorText" layoutX="79.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="193.0" />
+      <TextField fx:id="profileNameField" layoutX="101.0" layoutY="121.0" />
+      <Button fx:id="createButton" layoutX="132.0" layoutY="171.0" mnemonicParsing="false" onAction="#onCreate" text="Create Profile" />
+      <Button fx:id="loadButton" layoutX="62.0" layoutY="87.0" mnemonicParsing="false" onAction="#onLoad" text="Load Profile" />
+      <Text fx:id="errorText" fill="RED" layoutX="-3.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="350.0" />
+      <Button fx:id="onDelete" layoutX="194.0" layoutY="87.0" mnemonicParsing="false" text="Delete Profile" />
    </children>
 </Pane>
